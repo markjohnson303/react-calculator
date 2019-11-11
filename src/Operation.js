@@ -3,12 +3,14 @@ import React from "react";
 class Operation extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      operation: props.operation
+    };
   }
   render() {
     return (
       <div>
-        <p>Operation</p>
+        <button className="operation">{this.state.operation}</button>
       </div>
     );
   }

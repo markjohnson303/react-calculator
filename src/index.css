@@ -1,13 +1,61 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+.App {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.wrapper {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: [col] 75px [col] 75px [col] 75px [col] 75px;
+  grid-template-rows: [row] 75px;
+  background-color: #e89d3a;
+  color: #444;
+  justify-content: center;
+  width: 330px;
+  border: 20px solid #e89d3a;
+  border-radius: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+  border: none;
+  box-shadow: 5px 5px grey;
+  transition-property: box-shadow;
+  transition-duration: 0.2s;
+  width: 100%;
+}
+
+button:focus {
+  outline: 0;
+}
+
+button:active {
+  box-shadow: 1px 1px grey;
+}
+
+.number {
+  background-color: #444;
+}
+
+.operation {
+  background-color: #222;
+}
+.display {
+  grid-column: col / span 3;
+  grid-row: row;
+  background-color: #ddd;
+  color: #222;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+  text-align: right;
 }

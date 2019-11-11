@@ -10,11 +10,25 @@ class Calculator extends React.Component {
   }
   render() {
     return (
-      <div>
-        <p>Calculator</p>
+      <div className="wrapper">
         <Display />
-        <Number />
-        <Operation />
+        <Operation operation="C" />
+        <Number number="7" />
+        <Number number="8" />
+        <Number number="9" />
+        <Operation operation="/" />
+        <Number number="4" />
+        <Number number="5" />
+        <Number number="6" />
+        <Operation operation="*" />
+        <Number number="1" />
+        <Number number="2" />
+        <Number number="3" />
+        <Operation operation="-" />
+        <Number number="0" />
+        <Number number="." />
+        <Operation operation="=" />
+        <Operation operation="+" />
       </div>
     );
   }

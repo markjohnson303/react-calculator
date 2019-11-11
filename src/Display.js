@@ -6,11 +6,7 @@ class Display extends React.Component {
     this.state = {};
   }
   render() {
-    return (
-      <div>
-        <p>Display</p>
-      </div>
-    );
+    return <div className="display">Display</div>;
   }
 }
 

@@ -10,7 +10,7 @@ class Number extends React.Component {
   render() {
     return (
       <div>
-        <p>Number</p>
+        <button className="number">{this.state.number}</button>
       </div>
     );
   }
