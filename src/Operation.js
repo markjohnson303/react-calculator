@@ -7,10 +7,15 @@ class Operation extends React.Component {
       operation: props.operation
     };
   }
+  onOperationInput = () => {
+    this.props.onOperationInput(this.state.operation);
+  };
   render() {
     return (
       <div>
-        <button className="operation">{this.state.operation}</button>
+        <button className="operation" onClick={this.onOperationInput}>
+          {this.state.operation}
+        </button>
       </div>
     );
   }
