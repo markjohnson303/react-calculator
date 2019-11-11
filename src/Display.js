@@ -6,7 +6,7 @@ class Display extends React.Component {
     this.state = {};
   }
   render() {
-    return <div className="display">Display</div>;
+    return <div className="display">{this.props.display}</div>;
   }
 }
 

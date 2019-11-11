@@ -7,10 +7,15 @@ class Number extends React.Component {
       number: props.number
     };
   }
+  onNumberInput = () => {
+    this.props.onNumberInput(this.state.number);
+  };
   render() {
     return (
       <div>
-        <button className="number">{this.state.number}</button>
+        <button className="number" onClick={this.onNumberInput}>
+          {this.state.number}
+        </button>
       </div>
     );
   }
